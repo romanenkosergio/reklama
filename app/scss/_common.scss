@@ -1,0 +1,15 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: $darken;
+}
+a {
+  text-decoration: none !important;
+  transition: color .3s;
+}
+* {
+  outline: none;
+}
+img {
+  object-fit: cover;
+}
