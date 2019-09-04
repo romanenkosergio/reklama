@@ -1,0 +1,27 @@
+.b-contacts {
+  &__content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 120px;
+  }
+
+  &__link {
+    color: $accent;
+    display: flex;
+    margin-bottom: 40px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    color: $text;
+    margin-left: 40px;
+  }
+}

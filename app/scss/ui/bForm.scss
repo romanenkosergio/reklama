@@ -1,0 +1,23 @@
+.b-form {
+  width: 440px;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  &__input {
+    box-shadow: none;
+    width: 100% !important;
+    max-height: 50px;
+    border: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(#000, .2);
+    font-size: 16px;
+    color: $darken;
+    margin-bottom: 40px;
+    &::placeholder {
+      color: #5b646e;
+      opacity: .5;
+      font-size: 13px;
+    }
+  }
+}

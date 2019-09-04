@@ -1,0 +1,9 @@
+.b-footer {
+  background: url("../../img/footer-bg.jpg");
+  height: 320px;
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+  }
+}

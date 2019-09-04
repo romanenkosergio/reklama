@@ -1,0 +1,47 @@
+.container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.bold {
+  font-weight: bold;
+}
+.semi {
+  font-weight: 600;
+}
+.bLine {
+  padding-bottom: 70px;
+  border-bottom: 4px solid #f5f5f5;
+}
+.gradient {
+  background-image: linear-gradient(to left, $hover 0%, $accent 100%);
+}
+.gradient-button {
+  background-image: linear-gradient(to left, #d828b8 0%, #cf38ef 100%);
+  transition: all .3s;
+  cursor: pointer;
+  &:hover {
+    @extend .gradient
+  }
+}
+.gradient-text {
+  @extend .gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #12bbcb;
+  display: table;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+.title {
+  font-size: 36px;
+  @extend .bold;
+}
+.text {
+  font-size: 16px;
+  color: $text;
+  line-height: 1.5em;
+}

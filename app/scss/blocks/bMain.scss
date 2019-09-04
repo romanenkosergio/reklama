@@ -1,0 +1,12 @@
+.b-main {
+  background: url("../../img/header-bg.jpg") no-repeat center center;
+  height: calc(100vh - #{$headerHeight}px - 24px );
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-size: 72px;
+    @extend .bold, .uppercase;
+  }
+}

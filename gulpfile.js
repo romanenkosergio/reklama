@@ -1,4 +1,4 @@
-const syntax        = 'sass'; // Syntax: sass or scss;
+const syntax        = 'scss'; // Syntax: sass or scss;
 
 const 	gulp          = require('gulp'),
 		sass          = require('gulp-sass'),
@@ -35,7 +35,7 @@ gulp.task('styles', function() {
 gulp.task('js', function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
-		'app/libs/slick/slick.min.js',
+		'app/libs/swiper.min.js',
 		'app/js/index.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))

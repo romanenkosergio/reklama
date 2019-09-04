@@ -1,0 +1,5 @@
+.b-reviews {
+  &__container {
+    @extend .bLine;
+  }
+}

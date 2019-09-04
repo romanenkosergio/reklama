@@ -1,0 +1,75 @@
+.b-nav {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  height: #{$headerHeight}px;
+  width: 100%;
+  &--footer {
+    margin-top: 0;
+    margin-bottom: 50px;
+  }
+  &__menu {
+    margin-left: 100px;
+  }
+  &__link {
+    color: $darken;
+    margin-right: 30px;
+    transition: color .3s;
+    &:hover {
+      color: $accent;
+    }
+    &--footer {
+      color: $light;
+      &:hover {
+        color: $light;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+  &__phones {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+  }
+  &__phone {
+    color: $darken;
+    margin-bottom: 10px;
+    @extend .semi;
+    &:hover {
+      color: $accent;
+    }
+    &--footer {
+      color: $light;
+      &:hover {
+        color: $light;
+      }
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__social {
+    color: $accent;
+    margin-right: 20px;
+    transition: color .3s;
+    &:hover {
+      color: $hover;
+    }
+    &--footer {
+      color: $light;
+      &:hover {
+        color: $light;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
