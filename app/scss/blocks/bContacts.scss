@@ -6,22 +6,31 @@
   }
 
   &__info {
-    display: flex;
-    flex-direction: column;
-    margin-right: 120px;
+    margin-top: 3%;
+    width: 30%;
+    margin-right: 8%;
   }
 
   &__link {
     color: $accent;
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 12%;
     &:last-child {
       margin-bottom: 0;
+    }
+    &:hover {
+      i {
+        @extend .animate;
+      }
+      span {
+        color: $accent;
+      }
     }
   }
 
   &__text {
     color: $text;
-    margin-left: 40px;
+    margin-left: 10%;
+    transition: color .3s;
   }
 }

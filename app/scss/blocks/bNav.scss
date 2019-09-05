@@ -1,27 +1,57 @@
 .b-nav {
-  margin-top: 24px;
+  margin: 1% 0;
   display: flex;
   align-items: center;
   height: #{$headerHeight}px;
   width: 100%;
+  @media (max-width: 1100px) {
+    height: auto;
+  }
   &--footer {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 2%;
+  }
+  &__logo {
+    height: #{$headerHeight}px;
+    width: 100px;
   }
   &__menu {
-    margin-left: 100px;
+    margin-left: 10%;
+    @media (max-width: 1100px) {
+      margin-left: auto;
+    }
   }
   &__link {
     color: $darken;
     margin-right: 30px;
     transition: color .3s;
+    position: relative;
+    &::after {
+      display: block;
+      content: " ";
+      height: 2px;
+      width: 0;
+      left: 50%;
+      bottom: -2px;
+      position: absolute;
+      transition: width .3s ease-in-out;
+      transform: translateX(-50%);
+      background: $accent;
+    }
     &:hover {
       color: $accent;
+      &::after {
+        width: 100%;
+      }
     }
     &--footer {
       color: $light;
+      &::after {
+        background: #fff;
+      }
       &:hover {
         color: $light;
+
       }
     }
     &:last-child {
@@ -32,21 +62,44 @@
     margin-left: auto;
     display: flex;
     align-items: center;
+
   }
   &__phones {
     display: flex;
     flex-direction: column;
     margin-right: 40px;
+    @media (max-width: 1100px){
+      display: none;
+    }
   }
   &__phone {
     color: $darken;
     margin-bottom: 10px;
     @extend .semi;
+    position: relative;
+    &::after {
+      display: block;
+      content: " ";
+      height: 2px;
+      width: 0;
+      left: 50%;
+      bottom: -5px;
+      position: absolute;
+      transition: width .3s ease-in-out;
+      transform: translateX(-50%);
+      background: $accent;
+    }
     &:hover {
       color: $accent;
+      &::after {
+        width: 100%;
+      }
     }
     &--footer {
       color: $light;
+      &::after {
+        background: $light;
+      }
       &:hover {
         color: $light;
       }
@@ -61,6 +114,9 @@
     transition: color .3s;
     &:hover {
       color: $hover;
+      i {
+        @extend .animate;
+      }
     }
     &--footer {
       color: $light;

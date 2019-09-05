@@ -21,5 +21,8 @@
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "gulp-connect-php": "^1.0.3"
   }
 }

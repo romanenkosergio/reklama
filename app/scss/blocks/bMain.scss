@@ -1,12 +1,21 @@
 .b-main {
-  background: url("../../img/header-bg.jpg") no-repeat center center;
-  height: calc(100vh - #{$headerHeight}px - 24px );
+  background: url("../../img/main.jpg") no-repeat center center/cover;
+  height: calc(100vh - #{$headerHeight}px);
   min-height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  //background-size: 111%;
+  @media (max-width: 1000px) {
+    height: 80vh;
+    min-height: 300px;
+  }
+  &__img {
+    width: 40%;
+  }
   &__title {
-    font-size: 72px;
+    font-size: 4rem;
     @extend .bold, .uppercase;
   }
 }

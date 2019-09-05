@@ -4,7 +4,12 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  &__label {
+    margin-bottom: 40px;
+    width: 100%;
+  }
   &__input {
+    -webkit-appearance: none;
     box-shadow: none;
     width: 100% !important;
     max-height: 50px;
@@ -13,11 +18,16 @@
     border-bottom: 1px solid rgba(#000, .2);
     font-size: 16px;
     color: $darken;
-    margin-bottom: 40px;
+    transition: all .2s;
     &::placeholder {
       color: #5b646e;
       opacity: .5;
       font-size: 13px;
     }
+
+  }
+  &__error {
+    font-size: 12px;
+    color: red;
   }
 }

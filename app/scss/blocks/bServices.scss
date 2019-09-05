@@ -3,23 +3,36 @@
     display: flex;
     @extend .bLine;
   }
+
   &__text {
     margin-top: 32px;
     margin-bottom: 50px;
     max-width: 80%;
   }
+
   &__info {
     width: 60%;
   }
+
   &__items {
     display: flex;
     flex-wrap: wrap;
 
   }
+
   &__item {
     width: 25%;
     margin-bottom: 55px;
+    cursor: pointer;
+    &:hover {
+      .b-services__icon {
+        img {
+          transform: scale(1.2) translateZ(0);
+        }
+      }
+    }
   }
+
   &__content {
     max-width: 90%;
     width: 100%;
@@ -29,6 +42,7 @@
     justify-content: center;
     text-align: center;
   }
+
   &__icon {
     border-radius: 50%;
     border: 1px solid #cf38ef;
@@ -38,25 +52,38 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 20%;
+    transition: all .3s;
+    overflow: hidden;
     &::after {
       content: '';
       position: absolute;
       width: 10px;
       height: 10px;
-      bottom: -11px;
+      bottom: -10%;
       left: 50%;
       transform: translate(-50%, 11px);
       border-radius: 50%;
       background-color: $dott;
     }
+    img {
+      transition: all .3s;
+    }
+    @media (max-width: 1100px) {
+      width: 60px;
+      height: 60px;
+    }
   }
+
   &__name {
     @extend .bold;
-    font-size: 16px;
+    font-size: 0.8rem;
+  }
+  &__description {
+    display: none;
   }
   &__img {
-    transform: translateX(80px);
+    transform: translateX(15%);
     width: 40%;
     object-fit: contain;
   }

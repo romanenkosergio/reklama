@@ -6,7 +6,8 @@
     @extend .bLine;
   }
   &__img {
-    transform: translateX(-97px);
+    transform: translateX(-15%);
+    max-width: 55%;
   }
   &__info {
     text-align: right;
